@@ -1,0 +1,20 @@
+@use 'partial';
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: partial.$font;
+    background-color: partial.$bg-color;
+        p{
+            font-size: 16px;
+            color: partial.$text-color;
+        }
+        h1 {
+            font-family: 'brown sugar';
+            color: partial.$primary-color;
+        }
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+}
