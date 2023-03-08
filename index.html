@@ -5,19 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <!-- Font Awesome / Ikoner -->
+    <script src="https://kit.fontawesome.com/edb0e69b48.js" crossorigin="anonymous"></script>
+    <!--FONT - brown sugar-->
+    <link href="https://fonts.cdnfonts.com/css/brown-sugar-2" rel="stylesheet">
 </head>
 <body>
+<section class="header">
+    <div class="hero">
+        <!-- BAGGRUNDSVIDEO -->
+                <!-- DESKTOP - VIDEO -->
+                <video autoplay loop muted plays-inline class="bg-video">
+                    <source src="img/hero-desktop.mp4" type="video/mp4">
+                </video>
+                <!-- MOBIL - VIDEO -->
+                <video autoplay loop muted plays-inline class="bg-video-mobil">
+                    <source src="img/Forside_video_mobile.mp4" type="video/mp4">
+                </video>
+                <img src="img/nav-bg.png" alt="baggrunds form" class="nav-bg">
+                <img src="img/nav-bg-mobile.png" alt="baggrunds form" class="nav-bg-mobile">
+    <nav>
+        <a href="index.html"><img src="img/logo.png" alt="LOGO not so perfect"></a>
+        <div class="wrapper">
+            <a class="link-contact"href="kontakt.html">KONTAKT</a>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- menu bars icon-->
+        </div>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- closing icon-->
+                    <ul>
+                        <div class="links-navigation">
+                            <li><a href="#">HVEM ER VI</a></li>
+                            <li><a href="#">VORES KOMPETENCER</a></li>
+                            <li><a href="#">CASES</a></li>
+                            <li><a href="#">KONTAKT</a></li>
+                            <p>Branding skal legemliggøre alt, hvad der gør dig til dig - den måde, du klæder dig på, snakker og hvordan du får folk til at føle. Vi er her for at opfordre dig til at læne dig ind i dit sandeste selv, så vi kan skabe et brand med autentisk æstetik, der lyser op!
+                            </p>
+                            <a href="instagram.com/notsoperfect">INSTAGRAM</a>
+                            <a href="pinterest.com/notsoperfect">PINTEREST</a>
+                            <a href="linkedin.com/notsoperfect">LINKEDIN</a>
+                        </div>
+                        
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </nav>
-    </header>
+                    </ul>
+            </div>
+    </nav>
+</section>
+
+<!-- JacaScript for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-500px";
+    }
+
+
+</script>
 </body>
 </html>
