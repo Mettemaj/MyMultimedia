@@ -192,13 +192,14 @@ nav .fa{
     }
 
 }
-/*DEVIDER - DESKTOP*/
+/*DEVIDER - TOP - DESKTOP*/
 .devider {
     width: 100%;
     height: auto;
     display: flex;
     align-items: flex-start;
     margin-top: -130px;
+    overflow: hidden;
 }
 .waves-desktop {
     display: flex;
@@ -219,7 +220,7 @@ nav .fa{
     }
 }
 
-/* PRESENTATION - TOP */
+/* PRESENTATION - TOP - DESKTOP */
 
 .presentation {
     display: flex;
@@ -317,7 +318,7 @@ nav .fa{
     
 }
 
-/*DEVIDER - DESKTOP */
+/*DEVIDER BOTTON- DESKTOP */
 
 .devider-bottom {
         width: 100%;
@@ -326,6 +327,7 @@ nav .fa{
         align-items: flex-start;
         position:absolute;
         margin-top: 25%;
+        overflow: hidden;
     }
     .waves-bottom-desktop {
         display: flex;
@@ -345,3 +347,53 @@ nav .fa{
         height: auto;
     }
 }
+
+.om-os {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: flex-start;
+    height: 70vh;
+    width: 100%;
+    background-color: partial.$bg-color;
+    margin-top: 600px;
+    z-index: -2;
+
+    
+        .text-container {
+            width: 100%;
+            margin: 90px 0 90px 160px;
+                
+                h2{
+                    color: #000;
+                    font-family: 'brown sugar';
+                    font-size: 40px;
+                    line-height: 60px;
+                    letter-spacing: 2px;
+                }
+
+                p {
+                    color: #000;
+                    line-height: 35px;
+                    margin-bottom: 40px;
+                    margin-top: 40px;
+                    font-family: 'Hero New', sans-serif;
+                    font-size: 15px;
+                    padding: 0 0 30px 0;
+                }
+        }
+        .front-image {
+            width: 60%;
+            margin-top: -80px;
+        }
+        .form {
+            display: flex;
+            width: 300px;
+            height: auto;
+            float: left;
+            z-index: -1;
+            margin: 7% -8%;
+            position: absolute;
+            rotate: 45deg;
+            }
+        }
