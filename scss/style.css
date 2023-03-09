@@ -17,6 +17,7 @@ body {
   padding-bottom: 40px;
 }
 
+/* DESKTOP - BG - VIDEO */
 .bg-video {
   position: absolute;
   right: 0;
@@ -32,7 +33,7 @@ body {
   display: none;
 }
 
-/* MOBIL BAGGRUNDSVIDEO */
+/* MOBIL - BG - VIDEO */
 @media screen and (max-width: 900px) {
   .bg-video {
     display: none;
@@ -50,7 +51,7 @@ body {
     height: auto;
   }
 }
-/*NAVIGATION */
+/*NAVIGATION DESKTOP*/
 nav {
   display: flex;
   padding: 2% 10%;
@@ -62,7 +63,7 @@ nav {
 
 .nav-bg {
   width: 100%;
-  height: 150px;
+  height: 180px;
   position: absolute;
   z-index: -1;
 }
@@ -89,6 +90,7 @@ nav img {
   margin: 0 20px 0 0;
   letter-spacing: 2.5px;
   font-size: 22px;
+  font-family: "brown sugar";
 }
 
 .nav-links {
@@ -101,7 +103,7 @@ nav img {
   width: 500px;
   top: 0;
   right: -500px;
-  z-index: 2;
+  z-index: 3;
   transition: 1s;
 }
 
@@ -109,7 +111,7 @@ nav img {
   text-align: center;
 }
 .links-navigation p {
-  padding: 45% 8% 20% 8%;
+  padding: 45% 8% 10% 8%;
   line-height: 3;
   color: #1F427E;
   font-size: 12px;
@@ -118,13 +120,11 @@ nav img {
 
 .nav-links ul li {
   list-style: none; /* no bullets */
-  color: #EF89B9;
   padding: 12px 12px;
   position: relative;
   justify-content: center;
   top: 150px;
   font-size: 22px;
-  letter-spacing: 2.5px;
 }
 
 nav .fa {
@@ -136,7 +136,7 @@ nav .fa {
 
 .nav-links ul li a {
   font-size: 30px;
-  color: #EF89B9;
+  color: #E54E99;
   text-decoration: none;
 }
 
@@ -155,12 +155,19 @@ nav .fa {
 }
 
 .links-navigation a {
-  font-size: 22px;
+  font-size: 20px;
   color: #000;
   padding: 10px;
+  font-family: "brown sugar";
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 900px) {
+  nav {
+    padding: 2% 4%;
+  }
   .nav-bg {
     display: none;
   }
@@ -177,6 +184,7 @@ nav .fa {
   nav img {
     width: 80px;
     margin-left: 30px;
+    padding: 5% 0;
   }
   .link-contact {
     font-size: 15px;
@@ -184,5 +192,145 @@ nav .fa {
   }
   nav .fa {
     font-size: 20px;
+  }
+}
+/*DEVIDER - DESKTOP*/
+.devider {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-top: -130px;
+}
+
+.waves-desktop {
+  display: flex;
+}
+
+.waves-mobile {
+  display: none;
+}
+
+/*DEVIDER - MOBILE*/
+@media screen and (max-width: 900px) {
+  .waves-desktop {
+    display: none;
+  }
+  .waves-mobile {
+    display: flex;
+    margin-top: -160px;
+  }
+}
+/* PRESENTATION - TOP */
+.presentation {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 70vh;
+  width: 100%;
+  background-color: #fed0c7;
+  margin-top: -80px;
+}
+
+.presentation img {
+  display: flex;
+  width: 300px;
+  height: auto;
+  float: left;
+  z-index: 1;
+  margin: 1% 2%;
+  position: absolute;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0;
+  z-index: 2;
+  margin-top: 25px;
+}
+.container h1 {
+  color: #000;
+  font-family: "brown sugar";
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+.container h2 {
+  color: #fff;
+  padding: 30px 0;
+  font-style: italic;
+  font-weight: 200;
+}
+.container p {
+  color: #E54E99;
+  line-height: 35px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 40px;
+  font-family: "Hero New", sans-serif;
+  font-size: 15px;
+  padding: 0 0 30px 0;
+}
+.container .cta-btn {
+  background-color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 50px;
+  box-shadow: 2px 4px rgba(115, 114, 114, 0.1);
+}
+
+@media screen and (max-width: 900px) {
+  .presentation {
+    margin-top: -90px;
+    height: 80vh;
+  }
+  .container h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  .container h2 {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+  .container p {
+    font-size: 12px;
+    width: auto;
+  }
+  .presentation img {
+    width: 110px;
+    margin-top: -35px;
+  }
+}
+/*DEVIDER - DESKTOP */
+.devider-bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  margin-top: 25%;
+}
+
+.waves-bottom-desktop {
+  display: flex;
+}
+
+.waves-bottom-mobile {
+  display: none;
+}
+
+/* DEVIDER - MOBILE */
+@media screen and (max-width: 900px) {
+  .waves-bottom-desktop {
+    display: none;
+  }
+  .waves-bottom-mobile {
+    display: flex;
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
