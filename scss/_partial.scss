@@ -17,3 +17,10 @@ $font: 'Helvetica Neue';
     box-shadow: 2px 4px rgba($color: #737272, $alpha: .1);
     color: $primary-color;       
 }
+
+@mixin cta-box($width:30vw){
+    background-color:#D1B9DC;
+    width: $width;
+    padding: 5em;
+    margin: 2em auto;
+}
