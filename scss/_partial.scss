@@ -7,3 +7,13 @@ $secondary-color: #D494A7;
 $text-color: #000;
 $padding: 0.5em;
 $font: 'Helvetica Neue';
+
+@mixin primary-btn {
+    background-color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 50px;
+    box-shadow: 2px 4px rgba($color: #737272, $alpha: .1);
+    color: $primary-color;       
+}

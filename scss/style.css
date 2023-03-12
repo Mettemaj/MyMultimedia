@@ -210,6 +210,7 @@ nav .fa {
 
 .waves-mobile {
   display: none;
+  height: 100%;
 }
 
 /*DEVIDER - MOBILE*/
@@ -218,8 +219,12 @@ nav .fa {
     display: none;
   }
   .waves-mobile {
-    display: flex;
-    margin-top: -160px;
+    display: inherit;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -60px;
   }
 }
 /* PRESENTATION - TOP - DESKTOP */
@@ -282,17 +287,22 @@ nav .fa {
   font-size: 18px;
   padding: 20px 50px;
   box-shadow: 2px 4px rgba(115, 114, 114, 0.1);
+  color: #E54E99;
 }
 
 @media screen and (max-width: 900px) {
   .presentation {
-    margin-top: -90px;
+    margin-top: -10px;
     height: 80vh;
   }
+  .container {
+    width: 87%;
+  }
   .container h1 {
-    font-size: 26px;
+    font-size: 22px;
     letter-spacing: 1px;
     font-weight: 700;
+    line-height: 40px;
   }
   .container h2 {
     font-size: 16px;
@@ -301,6 +311,7 @@ nav .fa {
   .container p {
     font-size: 12px;
     width: auto;
+    padding: 10px 0;
   }
   .presentation img {
     width: 110px;
@@ -326,30 +337,33 @@ nav .fa {
   display: none;
 }
 
-/* DEVIDER - MOBILE */
+/* DEVIDER BOTTON - MOBILE */
 @media screen and (max-width: 900px) {
   .waves-bottom-desktop {
     display: none;
   }
   .waves-bottom-mobile {
     display: flex;
-    height: auto;
+    width: 100%;
+    height: 130px;
+    margin-top: 450px;
   }
 }
+/* OM OS SEKTION - DESKTOP */
 .om-os {
   display: flex;
   justify-content: space-between;
   position: absolute;
   align-items: flex-start;
-  height: 70vh;
+  height: 90vh;
   width: 100%;
   background-color: #E1C7C4;
-  margin-top: 600px;
-  z-index: -2;
+  margin-top: 37%;
+  z-index: -1;
 }
 .om-os .text-container {
   width: 100%;
-  margin: 90px 0 90px 160px;
+  margin: 90px 80px 90px 160px;
 }
 .om-os .text-container h2 {
   color: #000;
@@ -364,20 +378,62 @@ nav .fa {
   margin-bottom: 40px;
   margin-top: 40px;
   font-family: "Hero New", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   padding: 0 0 30px 0;
 }
+.om-os .text-container a {
+  background-color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 50px;
+  box-shadow: 2px 4px rgba(115, 114, 114, 0.1);
+  color: #E54E99;
+}
 .om-os .front-image {
-  width: 60%;
-  margin-top: -80px;
+  position: relative;
+  width: 45%;
+  margin-top: 80px;
+  z-index: 99;
+  margin-right: 90px;
 }
 .om-os .form {
   display: flex;
   width: 300px;
   height: auto;
   float: left;
-  z-index: -1;
-  margin: 7% -8%;
+  z-index: -2;
+  margin: 10% -8%;
   position: absolute;
-  rotate: 45deg;
+  rotate: 30deg;
+}
+
+/* OM OS - MOBILE */
+@media screen and (max-width: 900px) {
+  .om-os {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-top: 800px;
+    height: 110vh;
+    justify-content: center;
+  }
+  .om-os .text-container {
+    width: auto;
+    margin: 40px 10px 100px 10px;
+    text-align: center;
+  }
+  .om-os .front-image {
+    display: flex;
+    width: 90%;
+    margin-top: 70px;
+    z-index: 99;
+    margin-right: 0;
+    align-items: center;
+    margin: auto;
+  }
+  .om-os .form {
+    width: 200px;
+    margin: -20%;
+  }
 }/*# sourceMappingURL=style.css.map */
