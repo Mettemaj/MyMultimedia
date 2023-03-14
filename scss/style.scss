@@ -413,6 +413,31 @@ nav .fa{
             }
         }
 
+        /* Hvad kan vi hjælpe med? */
+    .cta-1{
+        @include partial.cta-box;
+    
+            p{
+                margin-bottom: 2em;
+            }
+    }
+    .cta-2{
+        @include partial.cta-box;
+    
+    
+            p{
+                margin-bottom: 2em;
+            }
+    }
+    .cta-3{
+        @include partial.cta-box;
+    
+            p{
+
+                margin-bottom: 2em;
+        
+            }
+
 /* OM OS - MOBILE */
 @media screen and (max-width: 900px) {
     .om-os {
