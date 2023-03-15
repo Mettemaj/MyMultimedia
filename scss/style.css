@@ -261,7 +261,7 @@ nav .fa {
 .container h1 {
   color: #000;
   font-family: "brown sugar";
-  font-size: 40px;
+  font-size: 3em;
   line-height: 60px;
   letter-spacing: 2px;
 }
@@ -350,7 +350,7 @@ nav .fa {
     margin-top: 450px;
   }
 }
-/* OM OS SEKTION - DESKTOP */
+/* Om os - DESKTOP */
 .om-os {
   display: flex;
   justify-content: space-between;
@@ -363,7 +363,8 @@ nav .fa {
   z-index: -1;
 }
 .om-os .text-container {
-  width: 100%;
+  z-index: 99;
+  width: 40%;
   margin: 90px 80px 90px 160px;
 }
 .om-os .text-container h2 {
@@ -391,13 +392,6 @@ nav .fa {
   box-shadow: 2px 4px rgba(115, 114, 114, 0.1);
   color: #E54E99;
 }
-.om-os .front-image {
-  position: relative;
-  width: 45%;
-  margin-top: 80px;
-  z-index: 99;
-  margin-right: 90px;
-}
 .om-os .form {
   display: flex;
   width: 300px;
@@ -408,20 +402,43 @@ nav .fa {
   position: absolute;
   rotate: 30deg;
 }
+.om-os .img-wrap {
+  display: flex;
+  position: absolute;
+  justify-content: right;
+  width: 100%;
+}
+.om-os .front-image {
+  position: relative;
+  width: 45%;
+  margin-top: 80px;
+  z-index: 99;
+  margin-right: 10px;
+}
+.om-os .streger {
+  display: flex;
+  width: 1000px;
+  height: auto;
+  float: right;
+  z-index: 2;
+  margin-right: -50px;
+  position: absolute;
+  margin-top: -220px;
+}
 
-/* OM OS - MOBILE */
+/* Om os - MOBILE */
 @media screen and (max-width: 900px) {
   .om-os {
     display: flex;
     flex-direction: column-reverse;
     position: relative;
-    margin-top: 800px;
-    height: 110vh;
+    margin-top: 940px;
+    height: 90vh;
     justify-content: center;
   }
   .om-os .text-container {
     width: auto;
-    margin: 40px 10px 100px 10px;
+    margin: 100px 10px 0 10px;
     text-align: center;
   }
   .om-os .front-image {
@@ -437,34 +454,77 @@ nav .fa {
     width: 200px;
     margin: -20%;
   }
+  .om-os .img-wrap {
+    margin-top: -900px;
+  }
+  /* LOW CUT - DEVIDER DESKTOP*/
 }
+.low-cut {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1050px;
+}
+.low-cut .low-cut-desktop {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.low-cut .low-cut-mobile {
+  display: none;
+}
+.low-cut h2 {
+  display: flex;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: -240px;
+  z-index: 99;
+  width: 100%;
+  justify-content: center;
+  font-size: 2.8em;
+  font-family: "brown sugar";
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+
 /* Hvad kan vi hjælpe med? */
-.cta-1 {
+.services {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 1400px;
+}
+.services .service-1 {
   background-color: #D1B9DC;
   width: 30vw;
   padding: 5em;
   margin: 2em auto;
 }
-.cta-1 p {
+.services .service-1 p {
   margin-bottom: 2em;
 }
-
-.cta-2 {
+.services .service-2 {
   background-color: #D1B9DC;
   width: 30vw;
   padding: 5em;
   margin: 2em auto;
 }
-.cta-2 p {
+.services .service-2 p {
   margin-bottom: 2em;
 }
-
-.cta-3 {
+.services .service-3 {
   background-color: #D1B9DC;
   width: 30vw;
   padding: 5em;
   margin: 2em auto;
 }
-.cta-3 p {
+.services .service-3 p {
   margin-bottom: 2em;
+}
+.services .service-3 .service-text {
+  width: 100%;
+  align-content: center;
 }/*# sourceMappingURL=style.css.map */
