@@ -1,47 +1,701 @@
-/*
-Error: Invalid CSS after "...-color: partial": expected ";", was ".$bg-color; "
-        on line 9 of /Users/mettemaj/Desktop/MyMultimedia/scss/style.scss
+@charset "UTF-8";
+/*Variabler*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-4:     margin: 0;
-5:     padding: 0;
-6:     box-sizing: border-box;
-7: }
-8: body {
-9:     background-color: partial.$bg-color; 
-10: }
-11: 
-12: .header {
-13:     min-height: 100vh;
-14:     width: 100%;
+body {
+  background-color: #E1C7C4;
+}
 
-Backtrace:
-/Users/mettemaj/Desktop/MyMultimedia/scss/style.scss:9
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:396:in `run'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/bin/sass:34:in `load'
-/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/bin/sass:34:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...-color: partial\": expected \";\", was \".$bg-color; \"\A         on line 9 of /Users/mettemaj/Desktop/MyMultimedia/scss/style.scss\A \A 4:     margin: 0;\A 5:     padding: 0;\A 6:     box-sizing: border-box;\A 7: }\A 8: body {\A 9:     background-color: partial.$bg-color; \A 10: }\A 11: \A 12: .header {\A 13:     min-height: 100vh;\A 14:     width: 100%;"; }
+.header {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+/* DESKTOP - BG - VIDEO */
+.bg-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.bg-video-mobil {
+  display: none;
+}
+
+/* MOBIL - BG - VIDEO */
+@media screen and (max-width: 900px) {
+  .bg-video {
+    display: none;
+  }
+  .bg-video-mobil {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 2%;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+  }
+}
+/*NAVIGATION DESKTOP*/
+nav {
+  display: flex;
+  padding: 2% 10%;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 200px;
+  width: 100%;
+}
+
+.nav-bg {
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  z-index: -1;
+}
+
+.nav-bg-mobile {
+  display: none;
+}
+
+nav img {
+  width: 120px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link-contact {
+  text-decoration: none;
+  color: #000;
+  margin: 0 20px 0 0;
+  letter-spacing: 2.5px;
+  font-size: 22px;
+  font-family: "brown sugar";
+}
+
+.nav-links {
+  flex: 1;
+  text-align: left;
+  padding-left: 100px;
+  position: absolute;
+  background-image: url(../img/bg-menu2.png);
+  height: 100vh;
+  width: 500px;
+  top: 0;
+  right: -500px;
+  z-index: 3;
+  transition: 1s;
+}
+
+.links-navigation {
+  text-align: center;
+}
+.links-navigation p {
+  padding: 45% 8% 10% 8%;
+  line-height: 3;
+  color: #1F427E;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-links ul li {
+  list-style: none; /* no bullets */
+  padding: 12px 12px;
+  position: relative;
+  justify-content: center;
+  top: 150px;
+  font-size: 22px;
+}
+
+nav .fa {
+  color: black;
+  margin: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links ul li a {
+  font-size: 30px;
+  color: #E54E99;
+  text-decoration: none;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #d04a82;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 50%;
+}
+
+.links-navigation a {
+  font-size: 20px;
+  color: #000;
+  padding: 10px;
+  font-family: "brown sugar";
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    padding: 2% 4%;
+  }
+  .nav-bg {
+    display: none;
+  }
+  .nav-bg-mobile {
+    display: inherit;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    z-index: -1;
+  }
+  .wrapper {
+    padding: 4% 0;
+  }
+  nav img {
+    width: 80px;
+    margin-left: 30px;
+    padding: 5% 0;
+  }
+  .link-contact {
+    font-size: 15px;
+    margin: 0 10px 0 0;
+  }
+  nav .fa {
+    font-size: 20px;
+  }
+}
+/*DEVIDER - TOP - DESKTOP*/
+.devider {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-top: -130px;
+  overflow: hidden;
+}
+
+.waves-desktop {
+  display: flex;
+}
+
+.waves-mobile {
+  display: none;
+  height: 100%;
+}
+
+/*DEVIDER - MOBILE*/
+@media screen and (max-width: 900px) {
+  .waves-desktop {
+    display: none;
+  }
+  .waves-mobile {
+    display: inherit;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -60px;
+  }
+}
+/* PRESENTATION - TOP - DESKTOP */
+.presentation {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 70vh;
+  width: 100%;
+  background-color: #fed0c7;
+  margin-top: -80px;
+}
+
+.presentation img {
+  display: flex;
+  width: 300px;
+  height: auto;
+  float: left;
+  z-index: 1;
+  margin: 1% 2%;
+  position: absolute;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0;
+  z-index: 2;
+  margin-top: 25px;
+}
+.container h1 {
+  color: #000;
+  font-family: "brown sugar";
+  font-size: 3em;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+.container h2 {
+  color: #fff;
+  padding: 30px 0;
+  font-style: italic;
+  font-weight: 200;
+}
+.container p {
+  color: #E54E99;
+  line-height: 35px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 40px;
+  font-family: "Hero New", sans-serif;
+  font-size: 15px;
+  padding: 0 0 30px 0;
+}
+.container .cta-btn {
+  background-color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 50px;
+  box-shadow: 2px 4px rgba(115, 114, 114, 0.1);
+  color: #E54E99;
+}
+
+@media screen and (max-width: 900px) {
+  .presentation {
+    margin-top: -10px;
+    height: 80vh;
+  }
+  .container {
+    width: 87%;
+  }
+  .container h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .container h2 {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+  .container p {
+    font-size: 12px;
+    width: auto;
+    padding: 10px 0;
+  }
+  .presentation img {
+    width: 110px;
+    margin-top: -35px;
+  }
+}
+/*DEVIDER BOTTON- DESKTOP */
+.devider-bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  margin-top: 28%;
+  overflow: hidden;
+}
+
+.waves-bottom-desktop {
+  display: flex;
+}
+
+.waves-bottom-mobile {
+  display: none;
+}
+
+/* DEVIDER BOTTON - MOBILE */
+@media screen and (max-width: 900px) {
+  .waves-bottom-desktop {
+    display: none;
+  }
+  .waves-bottom-mobile {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    margin-top: 440px;
+  }
+}
+/* Om os - DESKTOP */
+.om-os {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  align-items: flex-start;
+  height: 90vh;
+  width: 100%;
+  background-color: #E1C7C4;
+  margin-top: 37%;
+  z-index: -1;
+  overflow: hidden;
+}
+.om-os .text-container {
+  z-index: 99;
+  width: 40%;
+  margin: 90px 80px 90px 160px;
+}
+.om-os .text-container h2 {
+  color: #000;
+  font-family: "brown sugar";
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+.om-os .text-container p {
+  color: #000;
+  line-height: 35px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-family: "Hero New", sans-serif;
+  font-size: 13px;
+  padding: 0 0 30px 0;
+}
+.om-os .text-container a {
+  background-color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 50px;
+  box-shadow: 2px 4px rgba(115, 114, 114, 0.1);
+  color: #E54E99;
+}
+.om-os .form {
+  display: flex;
+  width: 300px;
+  height: auto;
+  float: left;
+  z-index: -2;
+  margin: 10% -8%;
+  position: absolute;
+  rotate: 30deg;
+}
+.om-os .img-wrap {
+  display: flex;
+  position: absolute;
+  justify-content: right;
+  width: 100%;
+}
+.om-os .front-image {
+  position: relative;
+  width: 50%;
+  margin-top: 110px;
+  z-index: 100;
+  margin-right: 10px;
+}
+.om-os .streger {
+  display: flex;
+  width: 1000px;
+  height: auto;
+  float: right;
+  z-index: 2;
+  margin-right: -50px;
+  position: absolute;
+  margin-top: -220px;
+}
+
+/* Om os - MOBILE */
+@media screen and (max-width: 900px) {
+  .om-os {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-top: 940px;
+    height: 90vh;
+    justify-content: center;
+  }
+  .om-os .text-container {
+    width: auto;
+    margin: 100px 10px 0 10px;
+    text-align: center;
+  }
+  .om-os .front-image {
+    display: flex;
+    width: 80%;
+    margin-top: 70px;
+    z-index: 99;
+    margin-right: 0;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+  }
+  .om-os .form {
+    width: 200px;
+    margin: -20%;
+  }
+  .om-os .img-wrap {
+    margin-top: -900px;
+  }
+  /* LOW CUT - DEVIDER DESKTOP*/
+}
+.low-cut {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1010px;
+}
+.low-cut .low-cut-desktop {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.low-cut .low-cut-mobile {
+  display: none;
+}
+.low-cut h2 {
+  display: flex;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: -220px;
+  z-index: 99;
+  width: 100%;
+  justify-content: center;
+  font-size: 2.8em;
+  font-family: "brown sugar";
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+
+/* LOW CUT - DEVIDER MOBILE*/
+@media screen and (max-width: 900px) {
+  .low-cut {
+    margin-top: 0;
+  }
+  .low-cut .low-cut-desktop {
+    display: none;
+  }
+  .low-cut .low-cut-mobile {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  .low-cut h2 {
+    margin-top: -120px;
+    font-size: 1.8em;
+  }
+}
+/* Hvad kan vi hjælpe med? */
+.services {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 1400px;
+  overflow: hidden;
+}
+.services h3 {
+  font-family: "brown sugar";
+  font-size: 1.8em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.services a {
+  text-decoration: none;
+  color: #000;
+  font-family: "hero";
+  font-size: 1em;
+  line-height: 28px;
+}
+.services li {
+  list-style: none;
+}
+.services .service-1 {
+  background-color: #D1B9DC;
+  width: 20vw;
+  padding: 5em;
+  margin: 2em auto;
+  height: 420px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+}
+.services .service-1 p {
+  margin-bottom: 2em;
+}
+.services .service-2 {
+  background-color: #D1B9DC;
+  width: 20vw;
+  padding: 5em;
+  margin: 2em auto;
+  height: 420px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+}
+.services .service-2 p {
+  margin-bottom: 2em;
+}
+.services .service-3 {
+  background-color: #D1B9DC;
+  width: 20vw;
+  padding: 5em;
+  margin: 2em auto;
+  height: 420px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+}
+.services .service-3 p {
+  margin-bottom: 2em;
+}
+
+/* SERVICES - MOBILE */
+@media screen and (max-width: 900px) {
+  .services {
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  .services .service-1 {
+    background-color: #D1B9DC;
+    width: 60vw;
+    padding: 5em;
+    margin: 2em auto;
+    height: 420px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+  }
+  .services .service-2 {
+    background-color: #D1B9DC;
+    width: 60vw;
+    padding: 5em;
+    margin: 2em auto;
+    height: 420px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+  }
+  .services .service-3 {
+    background-color: #D1B9DC;
+    width: 60vw;
+    padding: 5em;
+    margin: 2em auto;
+    height: 420px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+  }
+  .services h3 {
+    font-family: "brown sugar";
+    font-size: 1.8em;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+.statement {
+  display: flex;
+  flex-direction: column;
+}
+.statement .service-text {
+  color: #5a5a5a;
+  font-family: "hero";
+  text-align: center;
+  font-size: 1.2em;
+  margin: 40px 150px;
+  line-height: 30px;
+}
+.statement .cta-btn {
+  background-color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 50px;
+  box-shadow: 2px 4px rgba(115, 114, 114, 0.1);
+  color: #E54E99;
+  justify-content: center;
+  display: flex;
+  margin: 20px 400px;
+}
+
+/* STATEMENT - MOBILE */
+@media screen and (max-width: 900px) {
+  .statement .service-text {
+    font-size: 1.2em;
+    margin: 0 30px;
+  }
+  .statement .cta-btn {
+    margin: 20px 30px;
+    font-size: 0.9em;
+  }
+}
+/*DEVIDER - TOP - DESKTOP*/
+.devider2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+  overflow: hidden;
+}
+.devider2 .waves-desktop2 {
+  display: flex;
+}
+.devider2 .waves-mobile2 {
+  display: none;
+  height: 100%;
+}
+
+/*DEVIDER TOP - MOBILE*/
+@media screen and (max-width: 900px) {
+  .devider2 {
+    margin-top: 70px;
+  }
+  .devider2 .waves-mobile2 {
+    display: inherit;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -60px;
+  }
+  .devider2 .waves-desktop2 {
+    display: none;
+  }
+}
+/* FORLØB MED OS */
+.forlob {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+.forlob .smil {
+  width: 100%;
+  height: 500px;
+  margin-top: 400px;
+}
+.forlob .leaf-light {
+  float: left;
+  width: 550px;
+  position: absolute;
+  margin-top: -200px;
+}/*# sourceMappingURL=style.css.map */

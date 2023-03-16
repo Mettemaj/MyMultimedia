@@ -332,7 +332,7 @@ nav .fa{
         display: flex;
         align-items: flex-start;
         position:absolute;
-        margin-top: 25%;
+        margin-top: 28%;
         overflow: hidden;
     }
     .waves-bottom-desktop {
@@ -352,7 +352,7 @@ nav .fa{
         display: flex;
         width: 100%;
         height: 130px;
-        margin-top: 450px; 
+        margin-top: 440px; 
     }
     }
 
@@ -368,6 +368,7 @@ nav .fa{
     background-color: partial.$bg-color;
     margin-top: 37%;
     z-index: -1;
+    overflow: hidden;
     
         .text-container {
             z-index: 99;
@@ -415,9 +416,9 @@ nav .fa{
         
             .front-image {
                 position: relative;
-                width: 45%;
-                margin-top: 80px;
-                z-index: 99;
+                width: 50%;
+                margin-top: 110px;
+                z-index: 100;
                 margin-right: 10px;
             }
             .streger {
@@ -453,12 +454,13 @@ nav .fa{
             
             .front-image {
                 display: flex;
-                width: 90%;
+                width: 80%;
                 margin-top: 70px;
                 z-index: 99;
                 margin-right: 0;
                 align-items: center;
                 margin: auto;
+                height: 100%;
             }
             .form {
                 width: 200px;
@@ -476,13 +478,12 @@ nav .fa{
     position: absolute;
     align-items: center;
     justify-content: center;
-    margin-top: 1050px;
+    margin-top: 1010px;
 
         .low-cut-desktop {
             display: flex;
             width: 100%;
             position: relative;
-            
         }
         .low-cut-mobile {
             display: none;
@@ -492,17 +493,36 @@ nav .fa{
             position: relative;
             width: 100%;
             text-align: center;
-            margin-top: -240px;
+            margin-top: -220px;
             z-index: 99;
             width: 100%;
             justify-content: center;
             font-size: 2.8em;
             font-family: 'brown sugar';
-            
             line-height: 60px;
             letter-spacing: 2px;
 
         }
+}
+/* LOW CUT - DEVIDER MOBILE*/
+@media screen and (max-width: 900px){
+    .low-cut {
+        margin-top: 0;
+
+        .low-cut-desktop {
+            display: none;
+        }
+        .low-cut-mobile {
+            display: flex;
+            width: 100%;
+            position: relative;
+        }
+        h2 {
+            margin-top: -120px;
+            font-size: 1.8em;
+        }
+    }
+    
 }
 
 /* Hvad kan vi hjælpe med? */
@@ -511,6 +531,24 @@ nav .fa{
     width: 100%;
     flex-direction: row;
     margin-top: 1400px;
+    overflow: hidden;
+
+    h3 {
+        font-family: 'brown sugar';
+        font-size: 1.8em;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'hero';
+        font-size: 1em;
+        line-height: 28px;
+    }
+    li {
+        list-style:none;
+    }
 
     .service-1{
         @include partial.cta-box;
@@ -536,9 +574,128 @@ nav .fa{
         
             }
 
-        .service-text {
-            width: 100%;
-            align-content: center;
-        }
+        
     }
+}
+/* SERVICES - MOBILE */
+@media screen and (max-width: 900px) {
+    .services {
+    flex-direction: column;
+    margin-top: 200px;
+        
+        .service-1{
+            @include partial.cta-box-mobile;
+    }
+        .service-2{
+            @include partial.cta-box-mobile;
+    }
+        .service-3{
+            @include partial.cta-box-mobile;
+    }
+
+
+    h3 {
+        font-family: 'brown sugar';
+        font-size: 1.8em;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+}
+}
+
+.statement {
+    display: flex;
+    flex-direction: column;
+
+    .service-text {
+        color: #5a5a5a;
+        font-family: 'hero';
+        text-align: center;
+        font-size: 1.2em;
+        margin: 40px 150px;
+        line-height: 30px;
+    }
+    .cta-btn {
+        @include partial.primary-btn;
+        justify-content: center;
+        display: flex;
+        margin: 20px 400px;
+       
+    }
+}
+/* STATEMENT - MOBILE */
+@media screen and (max-width: 900px) {
+.statement {  
+    
+        .service-text {
+            font-size: 1.2em;
+            margin: 0 30px;
+    }
+        .cta-btn {
+            margin: 20px 30px;
+            font-size: 0.9em;
+        }
+}
+}
+
+/*DEVIDER - TOP - DESKTOP*/
+.devider2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+    overflow: hidden;
+
+        .waves-desktop2 {
+            display: flex;
+        }
+        .waves-mobile2 {
+            display: none;
+            height: 100%;
+        }
+}
+
+
+/*DEVIDER TOP - MOBILE*/
+@media screen and (max-width: 900px){
+    .devider2 {
+        margin-top: 70px;
+
+            .waves-mobile2 {
+                display: inherit;
+                width: 100%;
+                height: 120px;
+                position: absolute;
+                z-index: -1;
+                margin-top: -60px;
+            }
+            .waves-desktop2 {
+                display: none;
+            }
+    }
+    
+    
+}
+
+/* FORLØB MED OS */ 
+
+.forlob {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+
+        .smil {
+            width: 100%;
+            height: 500px;
+            margin-top: 400px;
+        }
+        .leaf-light {
+            float: left;
+            width: 550px;
+            position: absolute;
+            margin-top: -200px;
+        }
 }
