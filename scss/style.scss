@@ -703,16 +703,7 @@ nav .fa{
 
 
 
-    /* Footer - Maja G */
-
-    .footer{
-        margin: 0;
-        width: 100%;
-        height: 60vh;
-        padding: 100px;
-        background-color: #F2CFC6;
-        display: flex;
-    }
+ 
     
     /*DEVIDER - TOP - DESKTOP*/
     .devider3 {
@@ -748,10 +739,41 @@ nav .fa{
         }
     }
     
-    .col-3{
-        margin: 60px;
-    }
+   
     
-    .footer-bottom{
-        display: felx;
+
+      /* Footer - Maja G */
+
+      footer{
+        margin: 0;
+        width: 100%;
+        height: 70vh;
+        padding: 100px;
+        background-color: partial.$footer-color;
+        display: flex;
+        justify-content: center;
+
+            .col-1{
+                display: flex;
+                flex-direction: column;
+            }
+
+            h2{
+                font-family: "brown sugar";
+                text-align: center;
+                line-height: 50px;
+                font-size: 2em;
+                color: partial.$primary-color;
+            }
+
+            .logo-footer{
+                display: flex;
+                
+            }
+
+            .logo-img{
+                width: 70%;
+                display: flex;
+                justify-content: center;
+            }
     }
