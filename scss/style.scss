@@ -699,3 +699,60 @@ nav .fa{
             margin-top: -200px;
         }
 }
+
+
+
+
+    /* Footer - Maja G */
+
+    .footer{
+        margin: 0;
+        width: 100%;
+        height: 60vh;
+        padding: 100px;
+        background-color: #F2CFC6;
+        display: flex;
+    }
+    
+    /*DEVIDER - TOP - DESKTOP*/
+    .devider3 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 500px;
+        overflow: hidden;
+    }
+    
+    .waves3-desktop {
+        display: flex;
+    }
+    .waves3-mobile {
+        display: none;
+        height: 100%;
+    }
+    
+    /*DEVIDER - MOBILE*/
+    @media screen and (max-width: 900px){
+        .waves3-desktop {
+            display: none;
+        }
+    
+        .waves3-mobile {
+            display: inherit;
+            width: 100%;
+            height: 120px;
+            position: absolute;
+            z-index: -1;
+            margin-top: -60px;
+        }
+    }
+    
+    .col-3{
+        margin: 60px;
+    }
+    
+    .footer-bottom{
+        display: felx;
+    }
+    inline
